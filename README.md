@@ -7,7 +7,7 @@
 
 - Aprender Docker y Docker Compose
 - Automatizar procesos con CI/CD
-- Desplegar aplicaciones en Kubernetes
+- Desplegar aplicaciones en **Kubernetes**
 - Implementa
 
 | Semana | Tema Clave                                               | Proyecto a construir                               |
@@ -29,3 +29,6 @@
 ### Semana 1
 
 - ✅ [Día 01 - DevOps y la Importancia de Linux](Day-01/README.md)
+- ✅ [Día 01 - DevOps y la Importancia de Linux](Day-02/README.md)
+
+---
