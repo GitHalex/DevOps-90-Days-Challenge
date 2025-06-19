@@ -29,6 +29,7 @@
 ### Semana 1
 
 - ✅ [Día 01 - DevOps y la Importancia de Linux](Day-01/README.md)
-- ✅ [Día 02 - DevOps y la Importancia de Linux](Day-02/README.md)
+- ✅ [Día 02 - Introducción a Linux y la Terminal](Day-02/README.md)
+- ✅ [Día 02 - Provisionamiento con Vagrant](Day-03/README.md)
 
 ---
