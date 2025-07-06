@@ -2,18 +2,18 @@
 
 > "La mejor forma de aprender DevOps... es haciéndolo." - Roxs.
 
-## ✅ Desafíos del Día 3:
+## ✅ Desafíos del Día 4:
 
-### 1️⃣ 🌎 ¿Qué Es Vagrant?
+### 1️⃣ 🌎 ¿Qué es el control de Versiones?
 
-Vagrant es una herramienta que permite **crear** y **configurar** entornos de desarrollo virtualizados de forma sencilla, reproducible y automatizado
+#### 🎯 **Comandos basicos de GIT**
 
-#### 🎯 ¿Por que usar Vagrant?
-
-- Automatizas el entorno desde cero
-- probas sin miedo (puedes destruir y volver a levantar en segundos)
-- es ideal para testear scripts, Ansible, Docker o configuraciones
-- Funciona igual en todos los sistemas operativas
+- git init
+- git add
+- git commit
+- git status
+- git log
+- git diff
 
 #### 🧑‍💻 Comandos Esenciales
 
