@@ -4,8 +4,6 @@
 
 ## ✅ Desafíos del Día 4:
 
-### 1️⃣ 🌎 ¿Qué es el control de Versiones?
-
 #### 🎯 **Comandos basicos de GIT**
 
 - git init
@@ -15,7 +13,30 @@
 - git log
 - git diff
 
-#### 🧑‍💻 Comandos Esenciales
+### 1️⃣ Instalacion y Configuración
+
+```bash
+# Instalar Git en tu sistema
+# Visita: https://git-scm.com/downloads
+
+# Configurar tu nombre de usuario y email
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu@email.com"
+```
+
+#### 2️⃣ Crear tu primer repositorio
+
+```bash
+# Crear nueva carpeta e inicializar repositorio Git
+mkdir git-proyecto && cd git-proyecto
+git init
+
+# Crear archivos iniciales
+touch index.html style.css
+git add .
+git commit -m "Commit inicial"
+
+```
 
 | **COMANDOS**               | **DESCRIPCION**                                        |
 | -------------------------- | ------------------------------------------------------ |
