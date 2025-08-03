@@ -15,7 +15,71 @@
 - git log
 - git diff
 
-#### 🧑‍💻 Comandos Esenciales
+#### 🎯 **Branching y Merging**
+
+- Crear Ramas (branches) y funsion de cambios
+- Estrategias de branching
+
+#### 🎯 **Colaboracion**
+
+- Pull Request
+- Repositorios Remotos
+- Clonado, fetching, pulling y pushing
+- Reslucion de Conflictos
+
+## 1️⃣ Tareas iniciales
+
+### 1.instalacion y configuracion
+
+```bash
+# Instalar Git en tu sistema
+# Visita: https://git-scm.com/downloads
+
+# Configurar tu nombre de usuario y email
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu@email.com"
+```
+
+### 2. crear el primer repositorio
+
+```bash
+# Crear nueva carpeta e inicializar repositorio Git
+mkdir git-proyecto && cd git-proyecto
+git init
+
+# Crear archivos iniciales
+touch index.html style.css
+git add .
+git commit -m "Commit inicial"
+```
+
+### 3. realizar cambios y commit
+
+```bash
+# Modificar index.html y verificar cambios
+git status
+git diff
+git add index.html
+git commit -m "Actualizado index.html"
+```
+
+### 4. verificar historial
+
+```bash
+# Verificar historial de commits
+git log --oneline
+```
+
+### 5. conectar con GitHub
+
+```bash
+# Crear repositorio en GitHub, agregar remoto y push
+git remote add origin https://github.com/tuusuario/git-proyecto.git
+git branch -M main
+git push -u origin main
+```
+
+## 🔥 Comandos Esenciales
 
 | **COMANDOS**               | **DESCRIPCION**                                        |
 | -------------------------- | ------------------------------------------------------ |
@@ -26,23 +90,6 @@
 | vagrant reload --provision | Reiniciar y reejcutar provisionamient                  |
 
 ## 🏗️ Primer archivo **Vagrant** 👇
-
-```bash
-Vagrant.configure("2") do |config|
-  # Usa una imagen ligera de Ubuntu 22.04
-  config.vm.box = "ubuntu/jammy64"
-
-  # Configuración de red (accesible via IP)
-  config.vm.network "private_network", ip: "192.168.56.10"
-
-  # Provisionamiento con Shell
-  config.vm.provision "shell", inline: <<-SHELL
-    echo "¡Hola desde el provisionamiento!" > /tmp/hola.txt
-    apt update && apt install -y nginx
-    systemctl start nginx
-  SHELL
-end
-```
 
 ##### **Paso 1:** crear o iniciar la maquian virtual con el comando 👇
 
