@@ -31,6 +31,6 @@
 - ✅ [Día 01 - DevOps y la Importancia de Linux](Day-01/README.md)
 - ✅ [Día 02 - Introducción a Linux y la Terminal](Day-02/README.md)
 - ✅ [Día 03 - Provisionamiento con Vagrant](Day-03/README.md)
-- ✅ [Día 04 - Git & GitHub - Basics, Branching, Merging, PRs](Day-03/README.md)
+- ✅ [Día 04 - Git & GitHub - Basics, Branching, Merging, PRs](Day-04/README.md)
 
 ---
