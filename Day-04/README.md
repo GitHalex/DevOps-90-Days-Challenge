@@ -38,39 +38,41 @@ git commit -m "Commit inicial"
 
 ```
 
-| **COMANDOS**               | **DESCRIPCION**                                        |
-| -------------------------- | ------------------------------------------------------ |
-| vagrant up                 | crear o inicia la maquina virtual según el Vagrantfile |
-| vagrant ssh                | entras a tu VM para trabajar                           |
-| vagrant halt               | apagar la VM                                           |
-| vagrant destroy            | Eliminar la VM completamente                           |
-| vagrant reload --provision | Reiniciar y reejcutar provisionamient                  |
-
-## 🏗️ Primer archivo **Vagrant** 👇
+#### 3️⃣ Realizar cambios y Commit
 
 ```bash
-Vagrant.configure("2") do |config|
-  # Usa una imagen ligera de Ubuntu 22.04
-  config.vm.box = "ubuntu/jammy64"
-
-  # Configuración de red (accesible via IP)
-  config.vm.network "private_network", ip: "192.168.56.10"
-
-  # Provisionamiento con Shell
-  config.vm.provision "shell", inline: <<-SHELL
-    echo "¡Hola desde el provisionamiento!" > /tmp/hola.txt
-    apt update && apt install -y nginx
-    systemctl start nginx
-  SHELL
-end
+# Modificar index.html y verificar cambios
+git status
+git diff
+git add index.html
+git commit -m "Actualizado index.html"
 ```
 
-##### **Paso 1:** crear o iniciar la maquian virtual con el comando 👇
+#### 4️⃣ Verificar Historial
 
 ```bash
-vagrant up
+# Verificar historial de commits
+git log --oneline
 ```
 
-\*\*verficar virtualbox y que la maquina este creada
+#### 5️⃣ Conectar con GitHub
 
-##### **Paso 2:** ingresar a la maquina virtual con el comando 👇
+```bash
+# Crear repositorio en GitHub, agregar remoto y push
+git remote add origin https://github.com/tuusuario/git-proyecto.git
+git branch -M main
+git push -u origin main
+```
+
+## **🔥** Desafios Prácticos 👇
+
+- Desafio 1: Fork y Clone
+- Desafio 2: Branching
+- Desafio 3: Merging
+- Desafio 4: Deshacer Commits
+- Desafio 5: Rebase
+- Desafio 6: Pull Request
+- Desafio 7: Resolucion de Conflictos
+- Desafio 8: Git Stash
+- Desafio 9: Tags de Version
+- Desafio 10: Editar Commits Pasados
