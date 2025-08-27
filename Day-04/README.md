@@ -19,13 +19,26 @@ Es un software de control de versiones distribuido y descentralizado que permite
 
 #### 🧑‍💻 Comandos Esenciales
 
-| **COMANDOS**    | **DESCRIPCION**                            |
-| --------------- | ------------------------------------------ |
-| git init        | iniciarl repositorio git                   |
-| git status (st) | verificar el estado en la que se encuantra |
-| git add         | agregar el staging area o Index            |
-| git commit      |                                            |
-| git push        |                                            |
+| **COMANDOS**    | **DESCRIPCION**                                       |
+| --------------- | ----------------------------------------------------- |
+| git init        | iniciarl repositorio git                              |
+| git status (st) | verificar el estado en la que se encuantra            |
+| git add         | agregar el staging area o Index                       |
+| git commit      | pasa todo lo que esta en Staging Area a estado commit |
+| git push        | publica en la plataforma de uso GitHub, GitLab        |
+
+# 🔥 Desafíos Prácticos
+
+- Desafio 1: Fork y Clone
+- Desafio 2: Branching
+- Desafio 3: Merging
+- Desafio 4: Deshacer Commits
+- Desafio 5: Rebase
+- Desafio 6: Pull Request (PR)
+- Desafio 7: Resolución de Conflictos
+- Desafio 8: Git Stash
+- Desafio 9: Tagas de Version
+- Desafio 10: Editar commits Pasados
 
 ```bash
 Vagrant.configure("2") do |config|
