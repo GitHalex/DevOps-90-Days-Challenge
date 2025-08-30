@@ -40,22 +40,32 @@ Es un software de control de versiones distribuido y descentralizado que permite
 - Desafio 9: Tagas de Version
 - Desafio 10: Editar commits Pasados
 
+# 💡 Bonus: Estructura del .git
+
 ```bash
-Vagrant.configure("2") do |config|
-  # Usa una imagen ligera de Ubuntu 22.04
-  config.vm.box = "ubuntu/jammy64"
-
-  # Configuración de red (accesible via IP)
-  config.vm.network "private_network", ip: "192.168.56.10"
-
-  # Provisionamiento con Shell
-  config.vm.provision "shell", inline: <<-SHELL
-    echo "¡Hola desde el provisionamiento!" > /tmp/hola.txt
-    apt update && apt install -y nginx
-    systemctl start nginx
-  SHELL
-end
+📂 .git/
+├── 📁 hooks/          # Scripts de automatización
+├── 📁 objects/        # Almacena todos los objetos Git
+├── 📁 refs/           # Referencias a commits
+│   ├── 📁 heads/      # Branches locales
+│   └── 📁 remotes/    # Branches remotas
+├── 📄 config          # Configuración del repositorio
+├── 📄 HEAD            # Apunta a la branch actual
+└── 📄 index           # Área de staging
 ```
+
+# 🚀 Git Avanzado - Rebase, Cherry-pick, Resolución de Conflictos
+
+## 📚 Puntos de Aprendizaje
+
+### Técnicas Avanzadas
+
+- Git Rebase - Deep dive y reescritura de historial
+- Git Cherry-pick - Aplicar commits especificos entre branches
+- Resolucion de conflictos - Identificar y resolver conflictos eficientemente
+- Reescritura de Historial -Casos de uso avanzados
+- Amending Commits - Modificar commits sin cambiar historial
+- Git Hooks - Automatizacion con pre-commit y post-commit hooks
 
 ##### **Paso 1:** crear o iniciar la maquian virtual con el comando 👇
 
