@@ -67,7 +67,11 @@ Es un software de control de versiones distribuido y descentralizado que permite
 - Amending Commits - Modificar commits sin cambiar historial
 - Git Hooks - Automatizacion con pre-commit y post-commit hooks
 
-##### **Paso 1:** crear o iniciar la maquian virtual con el comando 👇
+# 🔥 Desafíos Avanzados
+
+## Desafio 1: Rebase Interactivo
+
+### **Objetivo:** Modificar historial de commits (Renombrar, squash, reordenar)
 
 ```bash
 vagrant up
