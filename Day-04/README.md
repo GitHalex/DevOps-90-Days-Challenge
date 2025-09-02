@@ -54,9 +54,7 @@ Es un software de control de versiones distribuido y descentralizado que permite
 └── 📄 index           # Área de staging
 ```
 
-# 🚀 Git Avanzado - Rebase, Cherry-pick, Resolución de Conflictos
-
-## 📚 Puntos de Aprendizaje
+## 🚀 Git Avanzado - Rebase, Cherry-pick, Resolución de Conflictos
 
 ### Técnicas Avanzadas
 
@@ -71,28 +69,36 @@ Es un software de control de versiones distribuido y descentralizado que permite
 
 ## Desafio 1: Rebase Interactivo
 
-### **Objetivo:** Modificar historial de commits (Renombrar, squash, reordenar)
+**Objetivo**: Modificar historial de commits (renombrar, squash, reordenar)
 
-```bash
-vagrant up
-```
+## Desafio 2: Cherry-pick
 
-\*\*verficar virtualbox y que la maquina este creada
+**Objetivo**: aplicar commit especifico de otra branch
 
-##### **Paso 2:** ingresar a la maquina virtual con el comando 👇
+## Desafio 3: Escenario de conflicto de Merge
 
-```bash
-vagratn ssh
-```
+**Objetivo**: Crear y resolver conflictos usando merge y rebase
 
-##### **Paso 3:** verificar el archivo creado con el comando 👇
+## Desafio 4: Deshacer commits
 
-```bash
-cat /tmp/hola.txt => res: ¡Hola desde el provisionamiento!
-```
+**Objetivo**: Usar git reset y gir revert - entender diferencias
 
-✅ el servidor web nginx despleagado el la direccion IP que en archivo vargant
+## Desafio 5: Amend de Commits
+
+**Objetivo**: Modificar ultimo commit sin cambiar historial
+
+## Desafio 6: Git Hooks
+
+**Objetivo**: Configurar hooks para automatizar varificaciones
+
+## Desafio 7: Rebase de Feature Branch
+
+**Objetivo**: Rebase feature sobre main sin merge commits
+
+## Desafio 8: Squash de Commits
+
+**Objetivo**: Combinar multiples commits en uno solo
 
 ## 🖥️ Resultado Final
 
-![aplicacion web desplegada](img/Screenshot%20from%202025-06-18%2023-52-53.png)
+![Ejercicios de Git completados](img/Reto_Dia4.png)
