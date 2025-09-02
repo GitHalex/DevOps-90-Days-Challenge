@@ -1,4 +1,4 @@
-# 📅 Día 04/90 - Provisionamiento con Vagrant
+# 📅 Día 04/90 - Git & GitHub - Basics, Branching, Merging, PRs
 
 > "La mejor forma de aprender DevOps... es haciéndolo." - Roxs.
 
@@ -19,13 +19,13 @@ Es un software de control de versiones distribuido y descentralizado que permite
 
 #### 🧑‍💻 Comandos Esenciales
 
-| **COMANDOS**    | **DESCRIPCION**                                       |
-| --------------- | ----------------------------------------------------- |
-| git init        | iniciarl repositorio git                              |
-| git status (st) | verificar el estado en la que se encuantra            |
-| git add         | agregar el staging area o Index                       |
-| git commit      | pasa todo lo que esta en Staging Area a estado commit |
-| git push        | publica en la plataforma de uso GitHub, GitLab        |
+| **COMANDOS**    | **DESCRIPCION**                                |
+| --------------- | ---------------------------------------------- |
+| git init        | iniciarl repositorio git                       |
+| git status (st) | verificar el estado en la que se encuantra     |
+| git add         | pasas los cambios al stagin area               |
+| git commit      | guardas los cambios en el repositorio local    |
+| git push        | publicas esos cambios en el repositorio remoto |
 
 # 🔥 Desafíos Prácticos
 
@@ -101,4 +101,4 @@ Es un software de control de versiones distribuido y descentralizado que permite
 
 ## 🖥️ Resultado Final
 
-![Ejercicios de Git completados](img/Reto_Dia4.png)
+![Ejercicios de Git completados](img/Reto_4.png)
