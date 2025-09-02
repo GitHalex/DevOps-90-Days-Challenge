@@ -32,5 +32,6 @@
 - ✅ [Día 02 - Introducción a Linux y la Terminal](Day-02/README.md)
 - ✅ [Día 03 - Provisionamiento con Vagrant](Day-03/README.md)
 - ✅ [Día 04 - Git & GitHub - Basics, Branching, Merging, PRs](Day-04/README.md)
+- ✅ [Día 05 - Automatizando Tareas con Bash Scripting](Day-05/README.md)
 
 ---
