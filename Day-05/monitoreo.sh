@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#para utilizar el script se necesita utilizar dependencias (si no tiene mail)
+# sudo apt-get install mailutils
 ADMIN="admin@ejemplo.com"
 USO_RAIZ=$(df / | grep / | awk '{print $5}' | sed 's/%//g')
 TAMANO_HOME=$(du -sh /home | awk '{print $1}' | sed 's/G//g')
