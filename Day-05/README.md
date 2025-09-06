@@ -2,7 +2,7 @@
 
 > "La mejor forma de aprender DevOps... es haciéndolo." - Roxs.
 
-## ✅ Desafíos del Día 4:
+## ✅ Desafíos del Día 5:
 
 ### 1️⃣ 🌎 ¿Qué es script Bash?
 
@@ -32,6 +32,15 @@ for i in {1..3}; do
     echo "Iteración $i"
 done
 ```
+
+### 📌 Guardalo con la extencion .sh, dale permisos y ejecutalo:
+
+```text
+chmod +x script.sh
+./script.sh
+```
+
+### 🧪 Buenas prácticas
 
 - Es el estandar actual
 - Codigo colaborativo, versinado y distribuido
