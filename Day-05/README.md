@@ -42,22 +42,10 @@ chmod +x script.sh
 
 ### 🧪 Buenas prácticas
 
-- Es el estandar actual
-- Codigo colaborativo, versinado y distribuido
-- Recuperacion de archivos
-- Mayor control
-- Shorcuts y plugins
-- Mejora la productividad
-
-#### 🧑‍💻 Comandos Esenciales
-
-| **COMANDOS**    | **DESCRIPCION**                                |
-| --------------- | ---------------------------------------------- |
-| git init        | iniciarl repositorio git                       |
-| git status (st) | verificar el estado en la que se encuantra     |
-| git add         | pasas los cambios al stagin area               |
-| git commit      | guardas los cambios en el repositorio local    |
-| git push        | publicas esos cambios en el repositorio remoto |
+- Usá #!/bin/bash siempre en la primera línea
+- Usá set -e para salir si ocurre un error
+- Comentá tu código con #
+- Probá scripts en entornos controlados (como Vagrant o online)
 
 # 🔥 Desafíos Prácticos
 
