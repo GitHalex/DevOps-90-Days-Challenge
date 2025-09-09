@@ -47,15 +47,123 @@ chmod +x script.sh
 - Comentá tu código con #
 - Probá scripts en entornos controlados (como Vagrant o online)
 
-# 🔥 Desafíos Prácticos
+### 📚 Tareas Opcionales del Día 4
 
-- Desafio 1: Fork y Clone
-- Desafio 2: Branching
-- Desafio 3: Merging
-- Desafio 4: Deshacer Commits
-- Desafio 5: Rebase
-- Desafio 6: Pull Request (PR)
-- Desafio 7: Resolución de Conflictos
-- Desafio 8: Git Stash
-- Desafio 9: Tagas de Version
--
+#### Nivel 1: Calentando motores
+
+```bash
+#!/bin/bash
+echo "¿Cual es tu nombre?"
+read NOMBRE
+echo "¿Cuantos años tenes boludo?"
+read EDAD
+
+echo "Hola $NOMBRE, tenes $EDAD años, bienvenido al mundo DevOps"
+```
+
+```bash
+#!/bin/bash
+PRIMERO=$1
+SEGUNDO=$2
+RESULTADO=$((PRIMERO * SEGUNDO))
+echo "El resultado de multiplicar $PRIMERO x $SEGUNDO = $RESULTADO"
+```
+
+```bash
+#!/bin/bash
+for i in {1..5}; do
+  echo "DevOps es 🔥 - iteración $i"
+done
+```
+
+#### Nivel 2: Automatización útil
+
+##### script que crear backups
+
+```bash
+#!/bin/bash
+
+# configuracion
+USER=$(whoami)
+BACKUP_DIR="/home/$USER/backups"
+LOG_DIR="/var/log"
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+BACKUP_NAME="logs_backup_$TIMESTAMP.tar.gz"
+
+# Crear direcotrio de backups si no existe
+mkdir -p $BACKUP_DIR
+
+# verificar permiso para leer /var/log
+if [ ! -r $LOG_DIR ]; then
+    echo "No tienes permiso para leer $LOG_DIR"
+    echo "Ejecuta el script con sudo o cmo root"
+    exit 1
+fi
+
+# crear el backup comprimido
+echo "Creando backupo de logs"
+if tar -cvf "$BACKUP_DIR/$BACKUP_NAME" -C $LOG_DIR . 2>/dev/null; then
+  echo "Backup creado exitosamente en $BACKUP_DIR/$BACKUP_NAME"
+
+  # Verificar el tamaño del backup
+  BACKUP_SIZE=$(du -h "$BACKUP_DIR/$BACKUP_NAME" | cut -f1)
+  echo "Tamaño del backup: $BACKUP_SIZE"
+else
+    echo "Error: No se pudo crear el backup. Verifica los permisos."
+    exit 1
+fi
+
+# Elimar backups antiguos (mas de 7 dias)
+echo "Eliminado backups antiguos (mas de 7 dias)..."
+find $BACKUP_DIR -name "logs_backup_*.tar.gz" -type f -mtime +7 -delete
+
+# Mostrar backups restantes
+echo "Backups actuales en el directorio de backups:"
+ls -la $BACKUP_DIR/*.tar.gz 2>/dev/null || echo "No hay backups en el directorio."
+
+echo "Proceso de backup completado."
+```
+
+#### script que busca palabras
+
+```bash
+#!/bin/bash
+
+# verificar que se hayan proporcionado exactamente dos argumentos
+if [ $# -ne 2 ]; then
+    echo "Eror:  Debes proposrcionar exactamente dos argumentos: una palabra y un archivo."
+    echo "Uso: $0 <archivo> <palabra>"
+    exit 1
+fi
+
+#Asignar los argumentos a variables
+ARCHIVO=$1
+PALABRA=$2
+
+# Verificar que el archivo existe
+if [ ! -f "$ARCHIVO" ]; then
+    echo "Error: El archivo '$ARCHIVO' no existe."
+    exit 1
+fi
+
+# Verifcar si el archivo es legible
+if [ ! -r "$ARCHIVO" ]; then
+    echo "Error: El archivo '$ARCHIVO' no tiene permisos de lectura."
+    exit 1
+fi
+
+# Buscar la palabra en el archivo usando grep
+# -q: nodo silecioso, -w: palabra completa, -i: ignorar mayusculas/minusculas
+
+if grep -q -w -i "$PALABRA" "$ARCHIVO"; then
+    echo "La palabra '$PALABRA' fue encontrada en el archivo '$ARCHIVO'."
+else
+    echo "La palabra '$PALABRA' no fue encontrada en el archivo '$ARCHIVO'."
+fi
+```
+
+#### Nivel 3: Reto DevOps PRO
+
+```bash
+
+```

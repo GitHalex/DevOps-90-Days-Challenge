@@ -38,4 +38,4 @@ find $BACKUP_DIR -name "logs_backup_*.tar.gz" -type f -mtime +7 -delete
 echo "Backups actuales en el directorio de backups:"
 ls -la $BACKUP_DIR/*.tar.gz 2>/dev/null || echo "No hay backups en el directorio."
 
-echo "Proceso de backup completado."cd 
+echo "Proceso de backup completado."
