@@ -164,7 +164,7 @@ fi
 
 #### Nivel 3: Reto DevOps PRO
 
-##### scirpt para guardar el historial en un archivo log incluyendo la fecha
+##### script para guardar el historial en un archivo log incluyendo la fecha
 
 ```bash
 #!/bin/bash
