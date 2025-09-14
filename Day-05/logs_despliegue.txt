@@ -1,0 +1,204 @@
+==========================================
+ INICIANDO DESPLIEGUE DE BOOK LIBRARY
+ Fecha: sáb 13 sep 2025 20:47:50 -04
+==========================================
+2025-09-13 20:47:50 - Instalando dependencias del sistema...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 https://brave-browser-apt-release.s3.brave.com stable InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:6 http://bo.archive.ubuntu.com/ubuntu jammy InRelease
+Hit:7 https://download.docker.com/linux/ubuntu noble InRelease
+Get:8 http://bo.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1.389 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main i386 Packages [522 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [175 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1.482 kB]
+Get:17 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21,6 kB]
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/universe i386 Packages [980 kB]
+Get:19 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:20 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52,3 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [377 kB]
+Get:22 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:24 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7.060 B]
+Get:25 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:26 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [19,2 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Fetched 5.534 kB in 5s (1.087 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+77 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3 is already the newest version (3.12.3-0ubuntu2).
+python3-pip is already the newest version (24.0+dfsg-1ubuntu1.2).
+python3-pip set to manually installed.
+python3-venv is already the newest version (3.12.3-0ubuntu2).
+python3-venv set to manually installed.
+git is already the newest version (1:2.43.0-1ubuntu7.3).
+The following packages were automatically installed and are no longer required:
+  cpu-checker debootstrap fonts-lato ibverbs-providers ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms libaio1 libarchive-tools
+  libboost-iostreams1.74.0 libboost-thread1.74.0 libcacard0 libdaxctl1 libfdt1
+  libgfapi0 libgfrpc0 libgfxdr0 libgl1-amber-dri libglapi-mesa libglusterfs0
+  libibverbs1 libiscsi7 libllvm19 libndctl6 libpmem1 libpmemobj1 librados2
+  librbd1 librdmacm1 libruby libruby3.0 libruby3.2 libspice-server1
+  libusbredirparser1 libvirt0 linux-headers-6.8.0-60
+  linux-headers-6.8.0-60-generic linux-headers-6.8.0-62
+  linux-headers-6.8.0-62-generic linux-headers-6.8.0-63
+  linux-headers-6.8.0-63-generic linux-headers-6.8.0-64
+  linux-headers-6.8.0-64-generic linux-headers-6.8.0-71
+  linux-headers-6.8.0-71-generic linux-headers-6.8.0-78
+  linux-headers-6.8.0-78-generic msr-tools nfs-kernel-server ovmf
+  qemu-block-extra qemu-system-common qemu-system-data qemu-system-x86
+  qemu-utils racc rake ruby ruby-bcrypt-pbkdf ruby-builder ruby-childprocess
+  ruby-concurrent ruby-ed25519 ruby-erubi ruby-excon ruby-ffi ruby-fog-core
+  ruby-fog-json ruby-fog-libvirt ruby-fog-xml ruby-formatador ruby-i18n
+  ruby-libvirt ruby-listen ruby-log4r ruby-mime-types ruby-mime-types-data
+  ruby-mini-portile2 ruby-multi-json ruby-net-scp ruby-net-sftp ruby-net-ssh
+  ruby-net-telnet ruby-nokogiri ruby-oj ruby-pkg-config ruby-rb-inotify
+  ruby-rubygems ruby-sdbm ruby-vagrant-cloud ruby-webrick ruby-xmlrpc ruby-zip
+  ruby3.2 rubygems-integration seabios
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  nginx-common
+Suggested packages:
+  fcgiwrap nginx-doc
+The following NEW packages will be installed:
+  nginx nginx-common
+0 upgraded, 2 newly installed, 0 to remove and 77 not upgraded.
+Need to get 564 kB of archives.
+After this operation, 1.596 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 nginx-common all 1.24.0-2ubuntu7.5 [43,4 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 nginx amd64 1.24.0-2ubuntu7.5 [520 kB]
+Preconfiguring packages ...
+Fetched 564 kB in 2s (226 kB/s)
+Selecting previously unselected package nginx-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 596420 files and directories currently installed.)
+Preparing to unpack .../nginx-common_1.24.0-2ubuntu7.5_all.deb ...
+Unpacking nginx-common (1.24.0-2ubuntu7.5) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../nginx_1.24.0-2ubuntu7.5_amd64.deb ...
+Unpacking nginx (1.24.0-2ubuntu7.5) ...
+Setting up nginx-common (1.24.0-2ubuntu7.5) ...
+Could not execute systemctl:  at /usr/bin/deb-systemd-invoke line 148.
+Setting up nginx (1.24.0-2ubuntu7.5) ...
+Not attempting to start NGINX, port 80 is already in use.
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for ufw (0.36.2-6) ...
+Synchronizing state of nginx.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable nginx
+Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xeu nginx.service" for details.
+2025-09-13 20:48:39 - Dependencias instaladas correctamente
+2025-09-13 20:48:39 - Clonando aplicación desde GitHub...
+Cloning into 'devops-static-web'...
+2025-09-13 20:50:40 - Aplicación clonada/actualizada correctamente
+2025-09-13 20:50:40 - Configurando entorno virtual Python...
+Requirement already satisfied: pip in ./venv/lib/python3.12/site-packages (24.0)
+Collecting pip
+  Downloading pip-25.2-py3-none-any.whl.metadata (4.7 kB)
+Downloading pip-25.2-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 4.2 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 24.0
+    Uninstalling pip-24.0:
+      Successfully uninstalled pip-24.0
+Successfully installed pip-25.2
+Collecting certifi (from -r requirements.txt (line 1))
+  Downloading certifi-2025.8.3-py3-none-any.whl.metadata (2.4 kB)
+Collecting click (from -r requirements.txt (line 2))
+  Downloading click-8.2.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting Flask (from -r requirements.txt (line 3))
+  Downloading flask-3.1.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting Flask-SQLAlchemy (from -r requirements.txt (line 4))
+  Downloading flask_sqlalchemy-3.1.1-py3-none-any.whl.metadata (3.4 kB)
+Collecting Flask-WTF (from -r requirements.txt (line 5))
+  Downloading flask_wtf-1.2.2-py3-none-any.whl.metadata (3.4 kB)
+Collecting itsdangerous (from -r requirements.txt (line 6))
+  Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting Jinja2 (from -r requirements.txt (line 7))
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting MarkupSafe (from -r requirements.txt (line 8))
+  Downloading MarkupSafe-3.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+Collecting SQLAlchemy (from -r requirements.txt (line 9))
+  Downloading sqlalchemy-2.0.43-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.6 kB)
+Collecting Werkzeug (from -r requirements.txt (line 10))
+  Downloading werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Collecting WTForms (from -r requirements.txt (line 11))
+  Downloading wtforms-3.2.1-py3-none-any.whl.metadata (5.3 kB)
+Collecting blinker>=1.9.0 (from Flask->-r requirements.txt (line 3))
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting greenlet>=1 (from SQLAlchemy->-r requirements.txt (line 9))
+  Downloading greenlet-3.2.4-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (4.1 kB)
+Collecting typing-extensions>=4.6.0 (from SQLAlchemy->-r requirements.txt (line 9))
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Downloading certifi-2025.8.3-py3-none-any.whl (161 kB)
+Downloading click-8.2.1-py3-none-any.whl (102 kB)
+Downloading flask-3.1.2-py3-none-any.whl (103 kB)
+Downloading flask_sqlalchemy-3.1.1-py3-none-any.whl (25 kB)
+Downloading flask_wtf-1.2.2-py3-none-any.whl (12 kB)
+Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading MarkupSafe-3.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (23 kB)
+Downloading sqlalchemy-2.0.43-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 2.6 MB/s  0:00:01
+Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+Downloading wtforms-3.2.1-py3-none-any.whl (152 kB)
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading greenlet-3.2.4-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (607 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 607.6/607.6 kB 4.8 MB/s  0:00:00
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Installing collected packages: typing-extensions, MarkupSafe, itsdangerous, greenlet, click, certifi, blinker, WTForms, Werkzeug, SQLAlchemy, Jinja2, Flask, Flask-WTF, Flask-SQLAlchemy
+
+Successfully installed Flask-3.1.2 Flask-SQLAlchemy-3.1.1 Flask-WTF-1.2.2 Jinja2-3.1.6 MarkupSafe-3.0.2 SQLAlchemy-2.0.43 WTForms-3.2.1 Werkzeug-3.1.3 blinker-1.9.0 certifi-2025.8.3 click-8.2.1 greenlet-3.2.4 itsdangerous-2.2.0 typing-extensions-4.15.0
+Collecting gunicorn
+  Downloading gunicorn-23.0.0-py3-none-any.whl.metadata (4.4 kB)
+Collecting packaging (from gunicorn)
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Downloading gunicorn-23.0.0-py3-none-any.whl (85 kB)
+Downloading packaging-25.0-py3-none-any.whl (66 kB)
+Installing collected packages: packaging, gunicorn
+
+Successfully installed gunicorn-23.0.0 packaging-25.0
+2025-09-13 20:57:21 - Configurando Gunicorn...
+[2025-09-13 20:57:22 -0400] [22113] [INFO] Starting gunicorn 23.0.0
+[2025-09-13 20:57:22 -0400] [22113] [INFO] Listening at: http://127.0.0.1:8000 (22113)
+[2025-09-13 20:57:22 -0400] [22113] [INFO] Using worker: sync
+[2025-09-13 20:57:22 -0400] [22115] [INFO] Booting worker with pid: 22115
+[2025-09-13 20:57:22 -0400] [22116] [INFO] Booting worker with pid: 22116
+[2025-09-13 20:57:22 -0400] [22117] [INFO] Booting worker with pid: 22117
+[2025-09-13 20:57:22 -0400] [22118] [INFO] Booting worker with pid: 22118
+2025-09-13 20:57:27 - Configurando Nginx...
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+nginx.service is not active, cannot reload.
+2025-09-13 20:57:27 - Nginx configurado y recargado correctamente
+2025-09-13 20:57:30 - Verificando servicios...
+=== ESTADO DE SERVICIOS ===
+✗ Nginx NO está activo
+✓ Gunicorn está corriendo
+✓ Puerto 8000 está en escucha
+✓ Aplicación responde en localhost:8000
+✓ Nginx sirve la aplicación correctamente
+==========================================
+ DESPLIEGUE COMPLETADO
+==========================================
+🎉 La aplicación está desplegada!
+📚 Accede a: http://192.168.1.21
+📚 O localmente: http://localhost
+📋 Logs detallados en: logs_despliegue.txt
