@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# desplegar_app.sh - Script para desplegar aplicación Flask Book Library
-# con Gunicorn y Nginx en Ubuntu/Bubuntu
-
 # Configuración
 LOG="logs_despliegue.txt"
 APP_DIR="devops-static-web"
